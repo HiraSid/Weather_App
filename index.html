@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Local Weather - Hira Siddiqui</title>
+
+  <link href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="assets/css/bulma.css" /> -->
+  <link rel="stylesheet" href="assets/css/main.css" />
+
+</head>
+
+<body>
+  <div class="all_data">
+  <!-- Search Form -->
+  <section class="search_from">
+    <div class="searchall">
+    <div class="search_icon"><i class="fas fa-search"></i></div>
+    <input class="input is-custom-form-input-text search" type="text" placeholder="Enter Pin code">
+    <div class="getapi"><i class="fas fa-globe"></i></div>
+    <div class="nogetapi"><i class="fas fa-globe"></i></div>
+  </div>
+  </section>
+
+  <!-- Users Location Weather Data -->
+  <section class="body_all">
+    <div id="icon" ></div>
+    <div class="all_deatis">
+      <div class="location_details">
+        <ul class="has-text-centered">
+          <li class="loc_icon " id ="icon2">
+            <i class="fas fa-map-marker-alt"></i>
+          </li>
+
+          <li class="location_name">  City :
+            <strong><span id="location_name">None</span></strong>
+          </li>
+
+          <li class="location_lat">Latitude:
+            <strong><span id="location_lat">none</span> ° N</strong>
+          </li>
+
+          <li class="location_lon">Longitude:
+            <strong><span id="location_lon">None</span> ° E</strong>
+          </li>
+
+          <li class="sun_icon " id ="icon2">
+            <i class="fas fa-cloud-sun"></i>
+          </li>
+          <li class="location_temp_syssunrise">Sun-Rise :
+            <strong><span id="location_temp_syssunrise">0</span></strong>
+          </li>
+
+          <li class="location_temp_syssunset">Sun - Set  :
+            <strong><span id="location_temp_syssunset">0</span></strong>
+          </li>
+
+        </ul>
+      </div>
+      <div class="location_temp">
+        <ul class="has-text-centered">
+          <li class="icon_temp " id ="icon2">
+            <i class="fas fa-temperature-high"></i>
+          </li>
+          <li class="location_temp1">Temprature :
+            <strong><span id="location_temp">0</span> °C</strong>
+          </li>
+
+          <li class="location_temp_max">Max Temprature :
+            <strong><span id="location_temp_max">0</span> °C</strong>
+          </li>
+
+          <li class="location_temp_min">Min Temprature :
+            <strong><span id="location_temp_min">0</span> °C</strong>
+          </li>
+          <li class="icon_pressure  " id ="icon2"><i class="fas fa-wind"></i></li>
+
+          <li class="location_temp_pressure">Pressure :
+            <strong><span id="location_temp_pressure">0</span> hpa</strong>
+          </li>
+          <li class="icon_humidity " id ="icon2">
+            <i class="fas fa-tint"></i>
+          </li>
+          <li class="location_temp_humidity">Humidity :
+            <strong><span id="location_temp_humidity">0</span> %</strong>
+          </li>
+
+        </ul>
+
+      </div>
+      <div class="location_wind">
+        <ul class="has-text-centered">
+<li class="icon_wind " id ="icon2">
+  <i class="fas fa-wind"></i>
+</li>
+          <li class="location_temp_windspeed">Wind speed :
+            <strong><span id="location_temp_windspeed">0</span> meter/sec</strong>
+          </li>
+
+          <li class="location_temp_winddeg">Wind Direction :
+            <strong><span id="location_temp_winddeg">0</span> ° (meteorlogical)</strong>
+          </li>
+
+          <li class="location_temp_windgust">Wind Gust :
+            <strong><span id="location_temp_windgust">0</span> meter/sec</strong>
+          </li>
+<li class="icon_cloud " id ="icon2">
+  <i class="fas fa-cloud"></i>
+</li>
+          <li class="location_temp_cloudsall">Clouds  :
+            <strong><span id="location_temp_cloudsall">0</span> %</strong>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="social">
+<div class="socialset">
+      <!-- Facebook -->
+    <div class="control">
+      <a class="button is-custom-button-social" href="https://www.facebook.com/hera5siddiqui/">
+        <span class="icon">
+          <i class="fab fa-facebook-square social__icon"></i>
+        </span>
+      </a>
+    </div>
+
+    <!-- Twitter -->
+    <div class="control">
+      <a class="button is-custom-button-social" href="#">
+        <span class="icon">
+          <i class="fab  fa-twitter social__icon"></i>
+        </span>
+      </a>
+    </div>
+
+    <!-- Instagram -->
+    <div class="control">
+      <a class="button is-custom-button-social" href="https://www.instagram.com/i_hsiddiqui/">
+        <span class="icon">
+          <i class="fab  fa-instagram social__icon"></i>
+        </span>
+      </a>
+    </div>
+
+    <!-- GitHub -->
+    <div class="control">
+      <a class="button is-custom-button-social" href="https://github.com/HiraSid">
+        <span class="icon">
+          <i class="fab  fa-github social__icon"></i>
+        </span>
+      </a>
+    </div>
+
+    <!-- LinkedIn -->
+    <div class="control">
+      <a class="button is-custom-button-social" href="https://www.linkedin.com/in/hira-siddiqui/">
+        <span class="icon">
+          <i class="fab  fa-linkedin-in social__icon"></i>
+        </span>
+      </a>
+    </div>
+
+    <!-- Mail -->
+    <div class="control">
+      <a class="button is-custom-button-social" href="mailto:hera.siddiqui58@gmail.com">
+        <span class="icon">
+          <i class="fas fa-envelope social__icon"></i>
+        </span>
+      </a>
+    </div>
+  </div>
+    </div>
+    
+
+    <!-- Copyright -->
+    <div class="copyright">
+    <p class="has-text-centered"> By <a href="" class="is-custom-footer-link">Hera</a> &copy; <span id="copyright"></span>
+    </p>
+  </div>
+    </div>
+    </div>
+  </footer>
+</div>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script type="text/javascript">
+    // Get the copyright year automatically. Cause automation is life!!
+    document.getElementById("copyright").innerHTML = new Date().getFullYear();
+  </script>
+</body>
+
+</html>
